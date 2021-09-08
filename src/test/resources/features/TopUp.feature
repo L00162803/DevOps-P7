@@ -67,4 +67,4 @@ Feature: TopUp Account
       And Mary has 100 euro in her euro Revolut account
       When They split a 90 euro payment
       Then The new balance of his euro account should now be 35
-      And The new balance of her euro account should now be 55
+      And The new balance of her euro account should now be 50
