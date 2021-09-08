@@ -23,21 +23,12 @@ jobs:
       
     # Run build using Gradle
     - name: Build with Gradle
-      run: ./gradlew build
-    - uses: actions/upload-artifact@main
-      with:
-        name: webpack artifacts
-        path: public/
+      run: ./gradlew build    
       
   test:
     needs: build
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/download-artifact@main
-        with:
-          name: webpack artifacts
-          path: public/
+    steps:      
     # Run tests using Gradle
       - name: Test with Gradle
         run: ./gradlew test
