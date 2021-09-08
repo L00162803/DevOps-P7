@@ -38,6 +38,11 @@ jobs:
         with:
           name: webpack artifacts
           path: build/libs
+
+    # Make gradlew executable
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
     # Run tests using Gradle
       - name: Test with Gradle
         run: ./gradlew test
