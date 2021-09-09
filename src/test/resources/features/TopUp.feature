@@ -1,7 +1,7 @@
 Feature: TopUp Account
   This feature describes various scenarios for users adding funds to their revolut account(s)
 
-  #As a user, I can topup my Revolut account using my debit card
+  #As a user, I can top up my Revolut account using my debit card
 
   Scenario: Add money to Revolut account using debit card
     Given Danny has 10 euro in his euro Revolut account
