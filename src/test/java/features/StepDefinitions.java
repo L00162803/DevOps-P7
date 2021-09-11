@@ -43,7 +43,7 @@ public class StepDefinitions {
 
     @When("Danny tops up")
     public void danny_tops_up() {
-        if(topUpMethod.getServiceStatus()=="Pass") {
+        if(topUpMethod.getServiceStatus().equals("Pass")) {
             danny.getAccount("EUR").addFunds(topUpAmount);
         }
     }
